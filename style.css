@@ -1,0 +1,61 @@
+body {
+    background-color: #fff; /* Fond blanc */
+    color: #333; /* Texte noir */
+    font-family: 'Arial', sans-serif; /* Utiliser une police lisible */
+}
+
+header {
+    background-color: #f3f13a; /* Jaune */
+    padding: 10px;
+}
+
+main {
+    margin: 20px;
+}
+
+form {
+    background-color: #fff; /* Fond blanc */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #f3f13a; /* Jaune */
+    color: #1b1b1b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Ajouter des styles pour rendre le formulaire plus convivial sur les petits écrans */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+}
+
+/* Rendre le logo responsive */
+header img {
+    max-width: 100%;
+    height: auto;
+}

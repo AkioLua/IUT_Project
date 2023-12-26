@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'intervention</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo_iut.png" alt="Logo IUT">
+    </header>
+
+    <main>
+        <form id="formulaire" action="traitement.php" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="annee">Année :</label>
+            <select id="annee" name="annee" required>
+                <option value="1">1ère année</option>
+                <option value="2">2ème année</option>
+                <option value="3">3ème année</option>
+            </select>
+
+            <label for="groupe">Groupe :</label>
+            <input type="text" id="groupe" name="groupe" required>
+
+            <label for="entreprise">Nom de l’entreprise :</label>
+            <input type="text" id="entreprise" name="entreprise" required>
+
+            <label for="creneau">Créneau horaire :</label>
+            <input type="text" id="creneau" name="creneau" placeholder="HH:MM - HH:MM" required>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+
+</body>
+</html>
